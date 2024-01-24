@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/mine/mine",
+    "pages/exerciseRecord/exerciseRecord",
+    "pages/index/index",
+    "pages/local/local",
+    "pages/nationwide/nationwide",
+    "pages/addactivity/addactivity",
+    "pages/addgroup/addgroup",
+    "pages/challenge/challenge",
+    "pages/nearbyRunning/nearbyRunning",
+    "pages/exercisePlan/exercisePlan",
+    "pages/agentMatters/agentMatters",
+    "pages/notification/notification",
+    "pages/mineEvents/mineEvents",
+    "pages/mineOrganization/mineOrganization",
+    "pages/commonProblem/commonProblem",
+    "pages/feedback/feedback",
+    "pages/consult/consult",
+    "pages/mySetting/mySetting",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "跑步",
+        "iconPath": "./images/导航-跑步.png",
+        "selectedIconPath": "./images/导航-跑步.png"
+      },
+      {
+        "pagePath": "pages/local/local",
+        "text": "同城",
+        "iconPath": "./images/导航-同城.png",
+        "selectedIconPath": "./images/导航-同城.png"
+      },
+      {
+        "pagePath": "pages/nationwide/nationwide",
+        "text": "全国",
+        "iconPath": "./images/导航-全国.png",
+        "selectedIconPath": "./images/导航-全国.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./images/导航-我的.png",
+        "selectedIconPath": "./images/导航-我的.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "运动跑步",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取您的定位信息"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

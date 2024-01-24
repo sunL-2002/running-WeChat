@@ -1,0 +1,135 @@
+/* pages/local/local.wxss */
+/* 设置搜索框容器样式 */
+.list_page{
+  width: 750rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.local{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	flex-direction: row;
+}
+.search_local{
+	display: flex;
+	width: 20%;
+	height: 80rpx;
+	align-items: flex-end;
+}
+.search_local image{
+	width: 35%;
+	height: 60%;
+}
+.search_local text{
+	width: 50%;
+	height: 80rpx;
+	color: mediumorchid;
+	font-size: 19px;
+}
+.search {
+	width: 100%;
+	height: 40px;
+	display: flex;
+  margin-top: 5px;
+	border: 1px solid #ccc;
+	border-radius: 14px;
+}
+.search input{
+	width: 80%;
+	height: 90rpx;
+	margin-left: 15px;
+	font-size: 20px;
+}
+.search-btn {
+	width: 15%;
+	height: 90rpx;
+}
+.search-btn image{
+	width: 100%;
+  height: 100%;
+}
+
+.body_but{
+	width: 100%;
+	display: flex;
+	height: 100%;
+	margin-top: 10px;
+}
+.body_but button{
+	width: 100%;
+	margin: 3px;
+	height: 100%;
+	border: 1px solid grey;
+	background-color: honeydew;
+}
+/* 宣传图 */
+.body_ima{
+	width: 100%;
+	height: 320rpx;
+	margin-top: 10px;
+}
+.body_ima image{
+	width: 100%;
+	height: 100%;
+} 
+
+/* 主体 */
+.body_box_top{
+  margin-top: 13px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.body_box_top text{
+  width: 99%;
+  font-size: 18px;
+  height: 40px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+.body_box_top button{
+  font-size: 17px;
+  font-weight: 100;
+  height: 40px;
+  display: flex;
+  float: right;
+  justify-content: right;
+  color:darkgrey;
+}
+
+.body_box_bom {
+  margin-top: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.body_box_bom_item {
+  width: 48%;
+  text-align: center;
+}
+.body_box_bom_item image {
+  width: 100%;
+  height: 220rpx;
+}
+.body_box_bom_item text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  /* 只显示一行 */
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}
+
+.top{
+  height: 20px;
+}

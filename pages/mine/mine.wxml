@@ -1,0 +1,131 @@
+<!--pages/mine/mine.wxml-->
+<view class="list_page">
+	<!-- 第一部分 -->
+	<view class="view_1">
+		<view class="view1_image" bindtap="navigateToTargetPage" data-text="my">
+			<image src="{{avatarUrl}}"></image>
+		</view>
+		<view class="view1_text" bindtap="navigateToTargetPage" data-text="my">
+			<text style="font-size: larger;">{{nickName}}</text>
+		</view>
+		<view class="view1_status">
+			<!-- <image></image>
+			<text>状态</text> -->
+		</view>
+	</view>
+	<!-- 第二部分 -->
+	<view class="view_2">
+		<view class="view2_text">
+			<view>{{totalHours}}h</view>
+			<view style="height: 20rpx;"></view>
+			<text>跑步总时长</text>
+		</view>
+		<view style="width: 1px;background-color: black;height: 70%;"></view>
+		<view class="view2_text">
+			<view>{{mileage}}km</view>
+			<view style="height: 20rpx;"></view>
+			<text>跑步总里程</text>
+		</view>
+		<view style="width: 1px;background-color: black;height: 70%;"></view>
+		<view class="view2_text">
+			<view>{{winRate}}%</view>
+			<view style="height: 20rpx;"></view>
+			<text>PK胜率</text>
+		</view>
+	</view>
+	<!-- 第三部分 -->
+	<view class="view_3">
+		<view class="view3_text" bindtap="navigateToTargetPage" data-text="exerciseRecord">
+			<view class="view3_image">
+				<image src="http://localhost:8080/image/运动记录.png"></image>
+			</view>
+			<view style="height: 30rpx;"></view>
+			<text>运动记录</text>
+		</view>
+		<view class="view3_text" bindtap="navigateToTargetPage" data-text="challenge">
+			<view class="view3_image">
+				<image src="http://localhost:8080/image/挑战记录.png"></image>
+			</view>
+			<view style="height: 30rpx;"></view>
+			<text>挑战记录</text>
+		</view>
+		<view class="view3_text" bindtap="navigateToTargetPage" data-text="nearbyRunning">
+			<view class="view3_image">
+				<image src="http://localhost:8080/image/约跑记录.png"></image>
+			</view>
+			<view style="height: 30rpx;"></view>
+			<text>约跑记录</text>
+		</view>
+		<view class="view3_text" bindtap="navigateToTargetPage" data-text="exercisePlan">
+			<view class="view3_image">
+				<image src="http://localhost:8080/image/运动计划.png"></image>
+			</view>
+			<view style="height: 30rpx;"></view>
+			<text>运动计划</text>
+		</view>
+	</view>
+	<!-- 第四部分 -->
+	<view class="view_4">
+		<view class="view4_top">
+			<text style="font-size: larger; margin-left: 20rpx;">我的服务</text>
+		</view>
+		<view class="view4_dom">
+			<view class="view4_text" bindtap="navigateToTargetPage" data-text="agentMatters">
+				<view class="view4_image">
+					<image src="http://localhost:8080/image/代办事项.png"></image>
+				</view>
+				<view style="height: 20rpx;"></view>
+				<text>代办事项</text>
+			</view>
+			<view class="view4_text" bindtap="navigateToTargetPage" data-text="notification">
+				<view class="view4_image">
+					<image src="http://localhost:8080/image/消息通知.png"></image>
+				</view>
+				<view style="height: 20rpx;"></view>
+				<text>消息通知</text>
+			</view>
+			<view class="view4_text" bindtap="navigateToTargetPage" data-text="mineEvents">
+				<view class="view4_image">
+					<image src="http://localhost:8080/image/我的活动.png"></image>
+				</view>
+				<view style="height: 20rpx;"></view>
+				<text>我的活动</text>
+			</view>
+			<view class="view4_text" bindtap="navigateToTargetPage" data-text="mineOrganization">
+				<view class="view4_image">
+					<image src="http://localhost:8080/image/我的组织.png"></image>
+				</view>
+				<view style="height: 20rpx;"></view>
+				<text>我的组织</text>
+			</view>
+			<view class="view4_text" bindtap="navigateToTargetPage" data-text="commonProblem">
+				<view class="view4_image">
+					<image src="http://localhost:8080/image/常见问题.png"></image>
+				</view>
+				<view style="height: 20rpx;"></view>
+				<text>常见问题</text>
+			</view>
+			<view class="view4_text" bindtap="navigateToTargetPage" data-text="feedback">
+				<view class="view4_image">
+					<image src="http://localhost:8080/image/反馈.png"></image>
+				</view>
+				<view style="height: 20rpx;"></view>
+				<text style="margin-left: 55rpx;">反馈</text>
+			</view>
+			<view class="view4_text" bindtap="navigateToTargetPage" data-text="consult">
+				<view class="view4_image">
+					<image src="http://localhost:8080/image/咨询.png"></image>
+				</view>
+				<view style="height: 20rpx;"></view>
+				<text style="margin-left: 55rpx;">咨询</text>
+			</view>
+			<view class="view4_text" bindtap="navigateToTargetPage" data-text="mySetting">
+				<view class="view4_image">
+					<image src="http://localhost:8080/image/设置.png"></image>
+				</view>
+				<view style="height: 20rpx;"></view>
+				<text style="margin-left: 55rpx;">设置</text>
+			</view>
+		</view>
+	</view>
+</view>

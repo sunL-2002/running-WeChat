@@ -1,0 +1,51 @@
+<!--pages/index/index.wxml-->
+<view>
+  <!-- 头部 -->
+	<view class="list_page">
+		<swiper class="head_swiper" circular="ture" indicator-dots="ture" autoplay="ture">
+				<swiper-item class="head_swiper_item" wx:for="{{images}}" wx:key="id">
+						<image class="swiper_item_pic" src="{{item.url}}"></image>
+				</swiper-item> 
+		</swiper>
+	</view>
+	<!-- 主体 -->
+	<view>
+		<view class="body_box">
+			<view class="body_box_top">
+				<text>挑战大厅</text>
+				<button style="background-color: transparent;">查看更多></button>
+			</view>
+			<view class="body_box_bom">
+					<view class="body_box_bom_item" wx:for="{{challenge}}" wx:key="id">
+							<image src="{{item.src}}"></image>
+							<text>{{item.challengeContent}}</text>
+					</view>
+			</view>
+		</view>
+		<view class="body_box">
+			<view class="body_box_top">
+				<text>活动推荐</text>
+				<button style="background-color: transparent;">查看更多></button>
+			</view>
+			<view class="body_box_bom">
+					<view class="body_box_bom_item" wx:for="{{events}}" wx:key="id">
+							<image src="{{item.src}}"></image>
+							<text>{{item.eventDescription}}</text>
+					</view>
+			</view>
+		</view>
+		<view class="body_box">
+			<view class="body_box_top">
+				<text>组织推荐</text>
+				<button style="background-color: transparent;">查看更多></button>
+			</view>
+			<view class="body_box_bom">
+					<view class="body_box_bom_item" wx:for="{{organization}}" wx:key="id">
+							<image src="{{item.src}}"></image>
+							<text>{{item.groupDescription}}</text>
+					</view>
+			</view>
+		</view>
+	</view>
+	<view class="top"></view>
+</view>

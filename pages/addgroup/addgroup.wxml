@@ -1,0 +1,21 @@
+<!--pages/addgroup/addgroup.wxml-->
+<view class="container">
+  <view class="title">添加跑团组织</view>
+  <view class="input-group">
+    组织名称：<input class="input" placeholder="组织名称" bindinput="onInputName"/>
+	</view>
+	<view class="input-group">
+    组织宣言：
+		<input class="input" placeholder="组织宣言" bindinput="onInputName"/>
+  </view>
+	<view class="picker-group">
+    组织地址：
+			<picker mode="selector" range="{{array1}}" bindchange="bindPickerChange1">
+				<view class="picker">{{province}}</view>
+			</picker>
+			<picker mode="selector" range="{{array2}}" bindchange="bindPickerChange2">
+				<view class="picker">{{city}}</view>
+			</picker>
+  </view>
+  <button class="submit-btn" bindtap="onSubmit">提交</button>
+</view>

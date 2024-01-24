@@ -1,0 +1,117 @@
+/* pages/mine/mine.wxss */
+.list_page{
+  width: 750rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.view_1{
+	width: 750rpx;
+	height: 300rpx;
+	display: flex;
+	flex-direction: row;
+	background-color: rgb(226, 245, 214);
+}
+.view1_image{
+	width: 25%;
+	height: 150rpx;
+	margin-top: 130rpx;
+	margin-left: 20rpx;
+}
+.view1_image image{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.view1_text{
+	width: 50%;
+	height: 100%;
+	margin-left: 20rpx;
+	margin-top: 200rpx;
+}
+.view1_status{
+	width: 30%;
+	height: 100%;
+	align-items: center;
+}
+
+.view_2{
+	width: 100%;
+	height: 180rpx;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+  /* justify-content: center; */
+}
+.view2_text{
+	width: 33%;
+	margin-left: 56rpx;
+}
+.view2_text view{
+	font-size: larger;
+	font-weight: bold;
+}
+
+.view_3 {
+	width: 100%;
+	height: 260rpx;
+	display: flex;
+	justify-content:space-around;
+	/* align-items: center; */
+	/* justify-content: center; */
+}
+.view3_text{
+	width: 25%;
+	height: 100%;
+	margin-left: 50rpx;
+}
+.view3_text text{
+	font-size: small;
+	margin-left: -15rpx;
+}
+.view3_image{
+	width: 50%;
+	height: 90rpx;
+	margin-top: 40rpx;
+}
+.view3_image image{
+	width: 100%;
+	height: 100%;
+}
+
+.view_4{
+	width: 100%;
+	height: 100%;
+	margin-top: 20rpx;
+}
+.view4_top{
+	width: 100%;
+	height: 40rpx;
+	margin-bottom: 20rpx;
+}
+.view4_dom{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.view4_text{
+	width: 25%;
+	height: 100%;
+}
+.view4_image{
+	width: 35%;
+	height: 80rpx;
+	margin-top: 40rpx;
+	margin-left: 50rpx;
+}
+.view4_image image{
+	width: 100%;
+	height: 100%;
+}
+.view4_text text{
+	margin-left: 32rpx;
+	font-size: small
+}

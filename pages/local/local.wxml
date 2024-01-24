@@ -1,0 +1,67 @@
+<!--pages/local/local.wxml-->
+<view class="list_page">
+	<!-- 搜索框 -->
+	<view class="local">
+		<view  bindtap="onLocal" class="search_local">
+			<image src="http://localhost:8080/image/定位.png"></image>
+			<view><text>{{local}}</text></view>
+		</view>
+		<view class="search">
+			<input value="{{inputValue}}" bindinput="onInput" placeholder="搜索" />
+			<view class="search-btn">
+				<image bindtap="onSearch" src="http://localhost:8080/image/搜索.png"></image>
+			</view>
+		</view>
+	</view>
+	<!-- 按钮 -->
+	<view class="body_but"> 
+			<button size="mini">约跑</button>
+			<button size="mini">挑战</button>
+			<button size="mini">跑步组织</button>
+			<button size="mini">跑步活动</button>
+	</view>
+	<!-- 宣传图 -->
+	<view class="body_ima">
+		<image src="http://localhost:8080/image/宣传图.png"></image>
+	</view>
+	<!-- 主体 -->
+	<view>
+		<view class="body_box">
+			<view class="body_box_top">
+				<text>挑战PK</text>
+				<button style="background-color: transparent;">查看更多></button>
+			</view>
+			<view class="body_box_bom">
+					<view class="body_box_bom_item" wx:for="{{challenge}}" wx:key="id">
+							<image src="{{item.src}}"></image>
+							<text>{{item.challengeContent}}</text>
+					</view>
+			</view>
+		</view>
+		<view class="body_box">
+			<view class="body_box_top">
+				<text>附近活动</text>
+				<button style="background-color: transparent;">查看更多></button>
+			</view>
+			<view class="body_box_bom">
+					<view class="body_box_bom_item" wx:for="{{events}}" wx:key="id">
+							<image src="{{item.src}}"></image>
+							<text>{{item.eventDescription}}</text>
+					</view>
+			</view>
+		</view>
+		<view class="body_box">
+			<view class="body_box_top">
+				<text>附近组织</text>
+				<button style="background-color: transparent;">查看更多></button>
+			</view>
+			<view class="body_box_bom">
+					<view class="body_box_bom_item" wx:for="{{organization}}" wx:key="id">
+							<image src="{{item.src}}"></image>
+							<text>{{item.groupDescription}}</text>
+					</view>
+			</view>
+		</view>
+	</view>
+	<view class="top"></view>
+</view>

@@ -1,0 +1,24 @@
+<!--pages/exerciseRecord/exerciseRecord.wxml-->
+<view class="container">
+  <view class="title">运动记录</view>
+	<block wx:if="{{sportRecords != null && sportRecords.length > 0}}">
+  	    <view class="record-list">
+			<block wx:for="{{sportRecords}}" wx:key="index">
+				<view class="item">
+          <view class="itemleft"></view>
+          <view class="itemright">
+            <view class="top">
+              <p class="itemright_line"></p>
+              <p class="itemright_date"></p> 
+            </view>
+            <view class="content"></view>
+          </view>
+        </view>   
+			</block>
+		</view>
+	</block>
+	<block wx:else>
+		<view class="tips">暂无运动记录</view>
+	</block>
+  <!-- <button class="add-btn" bindtap="addSportRecord">添加运动记录</button> -->
+</view>

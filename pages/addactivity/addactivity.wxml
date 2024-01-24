@@ -1,0 +1,29 @@
+<!--pages/addactivity/addactivity.wxml-->
+<view class="container">
+  <view class="team-header">
+    <text>创建活动</text>
+  </view>
+  <form bindsubmit="formSubmit">
+    <view class="form-item">
+      <text>活动名称：</text>
+      <input type="text" name="teamName" placeholder="请输入团队名称" />
+    </view>
+    <view class="form-item">
+      <text>活动描述：</text>
+      <input type="text" name="teamDescription" placeholder="请输入团队描述" />
+    </view>
+    <view class="form-item">
+      <text>活动负责人：</text>
+      <input type="text" name="teamLeader" placeholder="请输入团队负责人" />
+    </view>
+    <view class="form-item">
+      <text>活动成员数量：</text>
+      <input type="number" name="memberCount" placeholder="请输入成员数量" />
+    </view>
+    <view class="form-item">
+      <text>活动位置信息：</text>
+      <input type="text" name="memberInfo" placeholder="请输入成员信息，用逗号分隔" />
+    </view>
+    <button form-type="submit">提交</button>
+  </form>
+</view>

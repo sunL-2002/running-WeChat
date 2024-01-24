@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<view class="list_page">
+	<view class="body_map">
+		<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" polyline="{{polyline}}" show-location="{{true}}"></map>
+	</view>
+	<view class="body_but">
+		<button style="position: absolute; top: 620px; right: 100px; border-color: transparent;" type="primary" bindtap="startRun">{{option}}</button>
+	</view>
+</view>

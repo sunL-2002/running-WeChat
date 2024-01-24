@@ -1,0 +1,37 @@
+/* pages/addactivity/addactivity.wxss */
+.container {
+  padding: 20px;
+}
+
+.team-header {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.form-item {
+  margin-bottom: 10px;
+}
+
+.form-item text {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-item input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  background-color: #007aff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

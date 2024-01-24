@@ -1,0 +1,78 @@
+/* pages/exerciseRecord/exerciseRecord.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+}
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.record-list {
+  width: 100%;
+}
+.item{
+    width: 740rpx;
+    height: 180rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+}
+
+.itemleft{
+    flex: 1;
+    height: 180rpx;
+    background-color: hotpink;
+}
+
+.itemright{
+    flex: 4;
+    height: 180rpx;
+    background-color: lavender;
+}
+
+.itemright_line{
+    height: 40rpx;
+    width: 100rpx;
+    position: absolute;
+    left: 180rpx;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    background-color: lightcoral;
+}
+
+.itemright_date{
+    height: 40rpx;
+    width: 100rpx;
+    position: absolute;
+    right: 50rpx;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    background-color: darkorchid;
+}
+
+.top{
+    height: 70rpx;
+}
+
+.content{
+    height: 100rpx;
+    width: 574rpx;
+    margin-left: 10rpx;
+    background-color: darkolivegreen;
+}
+
+/* .add-btn {
+  margin-top: 20rpx;
+} */
+.tips{
+	height: 750rpx;
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+}
